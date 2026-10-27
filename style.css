@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans Flex", sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+    background: #1a1a1a;
+    box-shadow: 0 0 10px #8f978f;
+    padding: 1.5rem;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    transition: .5s;
+}
+.container:hover{
+    box-shadow: 0 0 10px #70af70,
+    0 0 20px #4f884f,
+    0 0 30px #499449;
+    border: 3px solid #02be02;
+}
+.container:hover h2{
+    color: #02be02;
+}
+.container:hover input{
+    border: 2px solid #02be02;
+}
+.container h2{
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0 20px 0;
+    color: #fff;
+    transition: .5s;
+}
+.container .input-box{
+    margin-bottom: 20px;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    padding: 15px 50px 15px 15px;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: .5s;
+}
+.input-box .icon-box{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+.input-box .icon-box:hover{
+    background: rgb(211, 204, 204);
+}
+.container .generate-btn{
+    width: 100%;
+}
+.generate-btn button{
+    width: 100%;
+    padding: 15px 50px 15px 15px;
+    border: none;
+    color: black;
+    outline: none;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #0a960a;
+    cursor: pointer;
+    transition: .5s;
+}
+.generate-btn button:hover{
+    background-color: #02be02;
+    transform: translateY(-2px);
+}
+.generate-btn button:active{
+    transform: translateY(0);
+}
